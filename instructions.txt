@@ -1,0 +1,31 @@
+Exercícios Lista, Fila, Pilha, Busca Sequencial e Busca Binária
+
+1) Escreva um programa que, dado uma sequência de números (gerados através de um for), determina se o número é par ou ı́mpar e insere o número em uma fila para pares ou em uma outra fila para ı́mpares e no final imprime o conteúdo de ambas as filas. Use apenas operações de enqueue, dequeue, empty para adicionar, remover e imprimir elementos.
+
+2) Implemente uma função que conta o número de nós de uma lista encadeada. Essa função deve obedecer ao protótipo:
+
+int conta_nos (Lista* lista);
+
+3) Implemente uma função que procura por um determinado elemento em uma lista encadeada. A função deve retornar desse endereço do nó caso o elemento esteja na lista e NULL caso contrário. Essa função deve obedecer ao protótipo:
+
+Lista* procurar (Lista* lista, int elem);
+
+4) Considerando listas de valores inteiros, implemente uma função que receba como parâmetro uma lista encadeada e um valor inteiro n e divida a lista em duas, de tal forma que a segunda lista comece no primeiro nó logo após a primeira ocorrência de n na lista original (faça isso sem copiar os elementos). Essa função deve obedecer ao protótipo:
+
+Lista* separa (Lista* lista, int n);
+
+5) Escreva um programa em C utilizando utilizando a estrutura de pilha com vetor para avaliar expressões na forma pós-fixa (dica: (int)(string[i] - ’0’) retorna o valor inteiro de um caractere entre ’0’ e ’9’, ou seja (int)(’9’- ’0’) = 9).
+
+Exemplo:
+./calcular “1 2 – 4 5 + *”
+Resultado: -9
+./calcular “9 0 1 + 2 3 * * +”
+Resultado: 15
+
+6) Implemente o algoritmo de busca sequêncial e realize buscas em um vetor ordenado de inteiros com 1.000.000 elementos.
+
+7) Implemente o algoritmo de busca binária (iterativo) e realize buscas em um vetor ordenado de inteiros com 1.000.000 elementos.
+
+int Busca (int V[], int n, int elem);
+
+8) Implemente o algoritmo de busca binária (recursivo) e realize buscas em um vetor ordenado de inteiros com 1.000.000 elementos.
