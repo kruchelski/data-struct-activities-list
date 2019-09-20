@@ -1,4 +1,8 @@
 //ex1 numero par/impar e armazenar em filas
+/* Alunos:
+*  André Klingenfus Antunes
+*  Cassiano Kruchelski Vidal
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -41,7 +45,6 @@ int dequeue(Fila **q) {
 	return n;
 }
 
-//função criada apenas para testes
 void printFila(Fila **q) {
 	while (!empty(*q)) {
 		printf("%d\t", dequeue(q));
@@ -68,8 +71,8 @@ int checkPar(int n) {
 int main(int argc, char* argv[]) {
 	Fila *impar, *par;
 	Fila *endPar, *endImpar; //apontam para o último elemento 
-	par = impar = endPar = endImpar = NULL;
-	int num, limiter, i, j; //limiter é o valor máximo do rand
+	par = impar = endPar = endImpar = NULL; //num é o numero máximo possível de elementos
+	int num, limiter, i, j; //limiter é o range máximo do rand
 	num = limiter = 10000;// valores default
 	srand(time(0)); // seed do random
 	printf("pom\n");

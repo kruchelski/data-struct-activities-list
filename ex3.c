@@ -1,4 +1,8 @@
 //ex3 - procurar elemento numa lista
+/* Alunos:
+*  André Klingenfus Antunes
+*  Cassiano Kruchelski Vidal
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -51,8 +55,8 @@ void clean(Lista* l) {
 
 int main(int argc, char* argv[]) {
 	Lista *listinha = NULL;
-	Lista * found = NULL;
-	int num, limiter, i, j; //limiter é o valor máximo do rand
+	Lista * found = NULL;  // num é o número máximo de elementos possível
+	int num, limiter, i, j; //limiter é o range máximo do rand
 	num = limiter = 10000;// valores default
 	srand(time(0)); // seed do random
 	if (argc >= 3) {

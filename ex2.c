@@ -1,4 +1,8 @@
 //ex2 - contar nós em uma lista encadeada
+/* Alunos:
+*  André Klingenfus Antunes
+*  Cassiano Kruchelski Vidal
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -10,10 +14,6 @@ typedef struct _Lista {
 
 int empty(Lista *f) {
 	return (f == NULL);
-}
-
-Lista* create(void) {
-	return NULL;
 }
 
 Lista* insert(Lista *l, int elem) {
@@ -52,8 +52,8 @@ void clean(Lista* l) {
 }
 
 int main(int argc, char* argv[]) {
-	Lista *listinha = NULL;
-	int num, limiter, i, j; //limiter é o valor máximo do rand
+	Lista *listinha = NULL; // num é o número máximo de elementos
+	int num, limiter, i, j; //limiter é o range máximo do rand
 	num = limiter = 10000;// valores default
 	srand(time(0)); // seed do random
 	if (argc >= 3) limiter = atoi(argv[2]); 

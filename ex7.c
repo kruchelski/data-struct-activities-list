@@ -1,4 +1,8 @@
 //ex7 busca binaria iterativa
+/* Alunos:
+*  André Klingenfus Antunes
+*  Cassiano Kruchelski Vidal
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -65,8 +69,8 @@ int buscar (int* v, int n, int elem) {
 
 int main(int argc, char* argv[]) {
 	srand(time(0));
-	int limiter = 100000; //limiter é o valor máximo do rand
-	int buscas = 10000;
+	int limiter = 100000; //limiter é o range máximo do rand
+	int buscas = 10000;	  //buscas é a quantidade de buscas realizada
 	int vetor[MAX], i, j, r;
 
 	if (argc >= 3) {

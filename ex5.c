@@ -1,4 +1,8 @@
 //ex5 avaliar expressões na forma pós-fixa usando pilha
+/* Alunos:
+*  André Klingenfus Antunes
+*  Cassiano Kruchelski Vidal
+*/
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -105,6 +109,11 @@ void printPilha(Pilha *p) {
 			printf(".%d.", pop(p));
 		}
 	}
+}
+
+void clean(Pilha *p) {
+	free(p->info);
+	free(p);
 }
 
 int main(int argc, char *argv[]) {

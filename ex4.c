@@ -1,4 +1,8 @@
-//ex4 - separar lista apos ocorrencia de um elemento
+//ex4 - separar lista apos ocorrencia de um determinado elemento
+/* Alunos:
+*  André Klingenfus Antunes
+*  Cassiano Kruchelski Vidal
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -56,8 +60,8 @@ void clean(Lista* l) {
 
 int main(int argc, char* argv[]) {
 	Lista *listinha = NULL;
-	Lista * nouveau = NULL;
-	int num, limiter, i, j; //limiter é o valor máximo do rand
+	Lista * nouveau = NULL; //num é o numero máximo possível de elementos
+	int num, limiter, i, j; //limiter é o range máximo do rand
 	num = limiter = 10000;// valores default
 	srand(time(0)); // seed do random
 	if (argc >= 3) {
@@ -77,7 +81,7 @@ int main(int argc, char* argv[]) {
 		listinha = insert(listinha, j);
 	}
 
-	j = rand() % limiter; // elemento buscado
+	j = rand() % limiter; // elemento que será utilizado para separar
 
 	printf("Lista original:\n\n");
 	printLista(listinha);
