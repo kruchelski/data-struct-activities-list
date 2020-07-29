@@ -1,7 +1,10 @@
 # Data Structures II - Activity 4  
 
-## List of some examples of data structures, sort and search algorithms   
+## Activities list of some examples of data structures, sort and search algorithms   
 ---  
 
-### Introduction   
-under construction...
+### What?   
+This is a list of activities for the Data Strucures II class of the Systems Analysis and Development course. The only goal here is learning.
+
+### Disclaimer
+Obvioysly these aren't the only way to resolve the activities listed.
